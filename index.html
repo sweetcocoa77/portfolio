@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+   <style>
+       
+       body{
+           padding: 0;
+           margin: 0;
+           
+       }
+       
+       a{
+           text-decoration: none;
+           color: white;
+       }
+       
+       ul{
+           list-style: none;
+           padding: 0;
+           margin: 0;
+       }
+       
+/*       page1    */
+       #back1 {
+           width: 1920px;
+           height: 1000px;
+           
+           background: url(img/ind/indback1.jpg) center center no-repeat;
+           background-size: cover;
+           position: relative;
+           
+       }
+       
+       #back1 div {
+           width: 1300px;
+           height: 1000px;
+           position: absolute;
+           top: 0;
+           left: 0;
+           right: 0;
+           margin: auto;
+       }
+       
+       #back1 div img:first-child {
+           
+           display: block;
+           width: 100%;
+           position: absolute;
+           top: 0;
+
+       }
+       
+      
+       #btn2 {
+           
+           width: 600px;
+           height: 400px;
+           display: block;
+           position: absolute;
+           top: 30%;
+           left: 10%;
+               
+       }
+       
+        #btn{
+           width: 249px;
+           height: 56px;
+           display: block;
+           position: absolute;
+           top: 70%;
+           right: 14%;
+           background-color: #2a3c72;
+           text-align: center;
+            overflow: hidden;
+       }
+       
+       #btn span {
+           background-color: black;
+           width: 249px;
+           height: 56px;
+           position: absolute;
+           top: 0;
+           left: 0;
+           transition: all .7s ease;
+           
+       }
+       
+       #btn:hover span { left: 100%; }
+       
+       #btn p {
+           width: 249px;
+           height: 56px;
+           position: absolute;
+           top: 0;
+           left: 0;
+           z-index: 10;}
+       
+/*       page2    */
+       
+       #back2wrap {
+           width: 1920px;
+           height: 1716px;
+           position: absolute;
+           top: 870px;
+           left: 0;
+           right: 0;
+           margin: auto;
+       }
+       
+        #back2 {
+           width: 1300px;
+            height: 100%;
+           
+           position: absolute;
+           top: 0;
+           bottom: 0;
+           left: 0;
+           right: 0;
+           margin: auto;
+           
+       }
+       
+       #back2 img{
+           width: 1300px;
+           
+           position: absolute;
+           top: 0;
+           bottom: 0;
+           left: 0;
+           right: 0;
+           margin: auto;
+           
+       }
+       
+       #back2 img:nth-child(2){
+           top: 200px;
+           
+       }
+       #back2 img:nth-child(3){
+           top: -200px;
+           z-index: 10;
+           transition: all 1s ease;
+           
+       }
+       #back2 img:nth-child(4){
+           top: -500px;
+           z-index: 20;
+           transition: all 1s ease;
+           
+       }
+       
+       
+       #back2:hover img:nth-child(3){
+           top: -580px;
+       }
+       
+       #back2:hover img:nth-child(4){
+           top: -1200px;
+       }
+       
+/*       page3    */
+       
+       
+        #back3 {
+           color: white;
+           width: 1920px;
+           height: 400px;
+           position: absolute;
+            top: 2586px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            background: url(img/ind/fix.jpg) center center no-repeat fixed;
+            background-size: cover;
+       }
+       #back3 div{
+           width: 50%;
+           height: 50%;
+           position: absolute;
+           top: 10%;
+           left: 20%;
+           margin: auto;
+          
+           
+           
+           
+       }
+    
+/*       page4    */
+       
+       
+       #back4 {
+           width: 1920px;
+           height: 680px;
+           position: absolute;
+           top: 2986px;
+           background-color: #131313;
+       }
+       
+       #back4 div {
+           width: 1300px;
+           height: 680px;
+           position: absolute;
+           left: 0;
+           right: 0;
+           margin: auto;
+           
+           
+       }
+       
+       #back4 div ul li {
+           
+           width: 428px;
+           height: 678px;
+           float: left;
+           border: 1px solid black;
+           box-sizing: border-box;
+           overflow: hidden;
+           
+           
+       }
+       
+       #back4 div ul li img {
+           z-index: 10;
+           transition: all 1s ease;
+           
+       }
+       
+       #back4 div ul li:nth-child(1):hover #tran1 {opacity: 0;}
+       #back4 div ul li:nth-child(2):hover #tran2 {opacity: 0;}
+       #back4 div ul li:nth-child(3):hover #tran3 {opacity: 0;}
+       
+       #back4 div ul li:nth-child(1){
+           background: url(img/ind/trandown2.jpg) center center no-repeat;
+       }
+       
+       #back4 div ul li:nth-child(2){
+           background: url(img/ind/trandown3.jpg) center center no-repeat;
+       }
+       
+       #back4 div ul li:nth-child(3){
+           background: url(img/ind/trandown1.jpg) center center no-repeat;
+       }
+       
+/*       footer         */
+       
+       footer{
+           width: 1920px;
+           height: 500px;
+           position: absolute;
+           top: 3600px;
+           background-color:  #131313;
+           color: white;
+           z-index: -10;
+          
+           
+       }
+       
+       footer h2 {
+           
+           width: 100%;
+           height: 50%;
+           position: absolute;
+           top: 30%; 
+           text-align: center;
+           font-size: 37px;
+          
+       }
+       
+        footer p {
+           
+           width: 100%;
+           height: 30%;
+           position: absolute;
+           top: 55%; 
+           text-align: center;
+           font-size: 24px;
+           line-height: 45px;
+          
+       }
+       
+       
+       
+       
+  
+       
+    
+   </style>
+   
+   
+    
+</head>
+<body>
+  
+  <div id="back1">
+      
+                      <div>
+                          <img src="img/ind/indmoc1.png" alt="img">
+                          <a id="btn2" href="main.html" target="_blank"></a>
+                          <a id="btn" href="main.html" target="_blank">
+                                <span></span>
+                                <p>웹사이트 더보기 &gt; </p>
+
+                          </a>
+                      </div>
+  </div>
+  
+  
+  <div id="back2wrap">
+  <div id="back2">
+              <img src="img/ind/indmoc2.png" alt="img">
+              <img src="img/ind/moc1.png" alt="img">
+              <img src="img/ind/moc2.png" alt="img">
+              <img src="img/ind/moc3.png" alt="img">
+
+  </div>
+  </div>
+  
+
+  
+ 
+    <div id="back3">
+                         <div>
+                          <h1 style="font-size: 45px;">Photoshop &amp; Illustrator</h1>
+                          <p style="font-size: 18px; line-height: 35px">다양한 편집과 수정을 할 수 있는 프로그램으로,<br/> 
+                    사진 이미지의 색상 보정, 이미지 합성,<br/> 
+                    문자 디자인, 인쇄물 디자인, <br/>
+                    웹디자인 등의 작업을 할 수 있습니다. </p>
+                    </div>
+    </div>
+  
+  
+  <div id="back4">
+
+          <div>
+             <ul>
+                 <li>
+                     <img id="tran1" src="img/ind/tranup2.jpg" alt="img">
+                 </li>
+                 <li>
+                     <img id="tran2" src="img/ind/tranup3.jpg" alt="img">
+                 </li>
+                 <li>
+                     <img id="tran3" src="img/ind/tranup1.jpg" alt="img">
+                 </li>
+             </ul>
+              
+
+          </div>
+ 
+  </div>
+  
+  <footer>
+      
+      <h2>Thank You for Watching<br/>.</h2>
+      <p>cantact me<br/>dlwjdtjs8030@naver.com / 010.6417.8635</p>
+      
+  </footer>
+   
+</body>
+</html>

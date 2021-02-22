@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>wheel 페이지 이동</title>
+    
+    <style>
+    
+        @import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+        
+        body { margin: 0; }
+        html, body, section { height: 100%; }
+    
+        #page1 { 
+            background: url("img/PAGE1-1.jpg") center center; 
+            background-size:cover; 
+            position: relative;
+        }
+        #page2 { 
+            background: url("img/PAGE1-2.jpg") center center; 
+            background-size:cover; 
+            position: relative;
+        }
+        #page3 { 
+            background: url("img/PAGE1-3.jpg") center center; 
+            background-size:cover; 
+            position: relative;
+        }
+        #page4 { 
+            background: url("img/PAGE1-4.jpg") center center; 
+            background-size:cover; 
+            position: relative;
+        }
+        #page5 { 
+            background: url("img/PAGE1-5.jpg") center center; 
+            background-size:cover; 
+            position: relative;
+        }
+
+        
+
+/*    menu    */
+        
+        #menu {
+            position: fixed;
+            width: 100%;
+            height: 10%;
+            z-index: 10;
+        }
+        
+        a {text-decoration: none; color: white;}
+        
+        #menu p { 
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            
+            width: 10%;
+            height: 100%;
+            
+        
+        }
+        
+        #menu p img {
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        
+        #menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            width: 90%;
+            height: 100%;
+        }
+        
+        #menu li {
+            float: right;
+            padding: 20px;
+            line-height: 70px;
+        }
+ 
+        #menu:after{
+            content: "" ;
+            display: block;
+            clear: both;
+                
+        }
+        
+        
+/*        page1*/
+        #page1 > p {
+            position: absolute;
+            top: 42%;
+            left: 50%;
+            
+            color: #ff8a00;
+            font-size: 42px;
+            font-family: 'Kaushan Script', cursive;
+            
+            
+        }
+        
+      
+        
+        .scroll {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 200px;
+            height: 100px;
+            
+        }
+        
+        .scroll img {
+            
+            display: block;
+            position: absolute;
+            
+            left: 0;
+            right: 0;
+            margin: auto;
+            height: 50%;
+         
+            
+        }
+        .scroll p {
+            
+          position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            margin: auto;
+            height: 50%;
+            text-align: center;
+            color: white;
+        }
+        
+        
+        
+/*        page2 */
+        #page2 #wrap {
+            
+            width: 1040px;
+            height: 340px;
+            position: absolute;
+            top: 38%;
+            
+            left: 0;
+            right: 0;
+            margin: auto;
+            
+            
+        }
+        
+       #page2 ul {
+            position: relative;
+            padding: 0;
+            list-style: none;
+        }
+        
+       #page2 ul li {
+            width: 240px;
+            height: 340px;
+            
+            float: left;
+            
+            position: relative;
+            overflow: hidden;
+            margin-left: 20px;
+           
+        }
+        
+       #page2 ul li span {
+            width: 240px;
+            height: 340px;
+            background-color:#c98e00;
+            position: absolute;
+            top: 0;
+            left: 0;
+            
+           
+           
+            transition: all 1s ease;
+            
+        }
+        
+       #page2 ul li a {
+            z-index: 10;
+            width: 240px;
+            height: 340px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-decoration: none;
+            color: white;
+            
+        
+        }
+        
+        
+       #page2 ul li:hover span { top: 340px; }
+        #page2 > p {
+            position: absolute;
+            top: 20%;
+            left: 0;
+            right: 0;
+            margin: auto;
+            z-index: 10;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            
+        }
+        
+/*        page3 */
+        
+        #page3 > img {
+            
+            display: block;
+            position: absolute;
+            top: 0;
+             bottom: 0;
+             margin: auto;
+            width: 100%;
+/*
+            width: 1280px;
+            height: 800px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+*/
+           
+        }
+        
+/*    page4       */
+        
+        
+        #wrap2 {
+            
+            width: 65%;
+            height: 70%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+        
+        #page4 > p {
+            
+            width: 35%;
+            height: 70%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+        
+        #page4 > p > img {
+            
+            width: 378px;
+            height: 549px;
+           
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+       
+        #wrap2 > img {
+            display: block;
+            width: 664px;
+            height: 474px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 5%;
+            margin: auto;
+            
+            z-index: 10 ;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, .6);
+        }
+        
+         .banner {
+            width: 611px;
+            height: 419px;
+            
+
+            position: absolute;
+            top: 0;
+            
+            bottom: 0;
+            right: 7%;
+            margin: auto;
+            
+        }
+        
+         input { display: none; } 
+        
+         .banner label {
+            width: 20px;
+            height: 20px;
+            float: left;
+            background-color: #ccc;
+            position: relative;
+            left: 250px;
+            top: 370px;
+            margin-left: 5px;
+            text-indent: -9999px;
+            z-index: 20;
+            cursor: pointer;
+        }
+        
+         input:checked + label { background-color: dodgerblue; }
+        
+        .mask {
+            width: 611px;
+            height: 419px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            position: absolute;
+            overflow: hidden;
+        }
+        
+        .mask li {
+            position: absolute;
+            top: 419px;
+        }
+        
+        #rdo1:checked ~ .mask li:nth-child(1) ,
+        #rdo2:checked ~ .mask li:nth-child(2) ,
+        #rdo3:checked ~ .mask li:nth-child(3) ,
+        #rdo4:checked ~ .mask li:nth-child(4)  {
+            top: 0;
+            transition: top 0.5s ease;
+            animation: none;
+            z-index:9;
+        }
+        
+        input:checked ~ .mask li {
+            animation: slideOut 0.5s ease;
+        }
+        
+        @keyframes slideOut {
+            0% { top: 0; }
+            100% { top: -419px; }
+        }
+        
+        
+        
+        
+        
+        
+        
+/*        page5 */
+        
+        #w {
+            
+            width: 75%;
+            height: 65%;
+            position: absolute;
+            top: 25%;
+            
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        
+         #w div:first-child {
+           
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            
+        }
+        
+         #w div:first-child img {
+            height: 100%;
+            position: absolute;
+            
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            
+            
+        }
+        
+       
+        #w div:nth-child(2) {
+            
+            width: 50%;
+            height: 48%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: auto;
+            overflow: hidden;
+            
+        }
+        
+        #w div:nth-child(2) img {
+             height: 100%;
+            position: absolute;
+            
+            top: 0;
+            left: 0;
+            margin: auto;
+            padding-left: 4%;
+            
+        }
+        
+        .hid {
+            transition: all 1s ease;
+        }
+        
+        
+         #w div:nth-child(2):hover .hid { left: 50%; }
+        
+        
+         #w div:nth-child(3) {
+            
+            width: 50%;
+            height: 48%;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            overflow: hidden;
+            
+        }
+        
+        #w div:nth-child(3) img {
+             height: 100%;
+            position: absolute;
+            
+            bottom:  0;
+            left: 0;
+            margin: auto;
+            padding-left: 4%;
+            
+        }
+        
+        .hid2 {
+            transition: all 1s ease;
+        }
+        
+        
+         #w div:nth-child(3):hover .hid2 { left: 50%; }
+        
+        
+        #page5 > p {
+            font-size: 24px;
+            color: white;
+            
+            position: absolute;
+            top: 15%;
+            left: 0;
+            right: 0;
+            margin: auto;
+            text-align: center;
+            
+        }
+        
+       footer{
+            width: 100%;
+            height: 80px;
+            
+            position: absolute;
+           bottom: 0;
+            
+        }
+        
+        footer img {
+            
+            height: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+
+
+  
+    
+    </style>
+    
+    <script src="lib/jquery-1.11.1.min.js"></script>
+    <script src="lib/jquery.easing.1.3.js"></script>
+    <script src="lib/jquery.mousewheel.js"></script>
+    <script>
+        $( function() {
+          
+            //브라우저 창에 휠에 의한 동작이 생기면 함수 실행
+            $( window ).on( 'mousewheel.disableScroll' , function(e) {
+                e.preventDefault();
+            }); 
+            
+            //브라우저 창에서 마우스 휠을 움직이면 함수 실행
+            $( window ).mousewheel( function( e,delta ) {
+                
+                //html, body가 움직이는 상태라면 함수를 강제 종료
+                if( $('html, body').is(':animated') ) { return; }
+                
+                    
+                
+                if( delta > 0 ) {              //마우스휠을 위로 굴렸을때
+                    
+                    $( 'html, body' ).animate( 
+                        { 'scrollTop' : '-=' + $(this).height() }, 
+                        1000, 
+                        "easeOutExpo" 
+                    );
+                
+                }else{                          //마우스 휠을 아래로 굴렸을때
+                    
+                    $( 'html, body' ).animate( 
+                        { 'scrollTop' : '+=' + $(this).height() }, 
+                        1000, 
+                        "easeOutExpo" 
+                    );
+                    
+                }
+                
+            });
+            
+        });
+    </script>
+    
+</head>
+<body>
+   
+   <div id="menu">
+      
+       <p><a href="#"><img src="img/logo.png" alt="logo"></a></p>
+       <ul>
+           <li></li>
+           <li><a href="#">CONTACT</a></li>
+           <li><a href="firenze.html">FIRENZE</a></li>
+           <li><a href="venice.html">VENICE</a></li>
+           <li><a href="milano.html">MILANO</a></li>
+           <li><a href="roma.html">ROMA</a></li>
+       </ul>
+   </div>
+    
+   
+    
+    <section id="page1">
+
+            <p> &quot What are you looking forward <br/>to doing this weekend? &quot </p>
+            <div class="scroll">
+                <img src="img/down.png" alt="down">
+                <p>SCROLL DOWN</p>
+            </div>
+    </section>
+    
+            
+    <section id="page2">
+        
+                    <p> 이탈리아 시내투어 </p>
+                    <div class="scroll">
+                        <img src="img/down.png" alt="down">
+                        <p>SCROLL DOWN</p>
+                    </div>
+
+
+                    <div id="wrap">
+                <ul>
+                    <li>
+
+                        <img src="img/page2-1.jpg" alt="img">
+                        <span></span>
+                        <a href="roma.html"><img src="img/Roma.png" alt="img"></a>
+                    </li>
+                    <li>
+
+                        <img src="img/page2-2.jpg" alt="img">
+                        <span></span>
+                        <a href="milano.html"><img src="img/milano.png" alt="img"></a>
+                    </li>
+                    <li>
+
+                        <img src="img/page2-3.jpg" alt="img">
+                        <span></span>
+                        <a href="venice.html"><img src="img/venice.png" alt="img"></a>
+                    </li>
+                    <li>
+
+                        <img src="img/page2-4.jpg" alt="img">
+                        <span></span>
+                        <a href="firenze.html"><img src="img/firenze.png" alt="img"></a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+    </section>  
+    
+                        
+    <section id="page3">
+        
+               <img src="img/page3.png" alt="img">
+               
+               <div class="scroll">
+                        <img src="img/down.png" alt="down">
+                        <p>SCROLL DOWN</p>
+                    </div>
+        
+    </section>    
+    <section id="page4">
+            <div id="wrap2">
+                            <img src="img/page4-1.png" alt="img">
+
+                            <div class="banner">
+
+                                <input type="radio" id="rdo1" name="rdo" checked />
+                                <label for="rdo1">1</label>
+
+                                <input type="radio" id="rdo2" name="rdo" />
+                                <label for="rdo2">2</label>
+
+                                <input type="radio" id="rdo3" name="rdo" />
+                                <label for="rdo3">3</label>
+
+                                <input type="radio" id="rdo4" name="rdo" />
+                                <label for="rdo4">4</label>
+
+                                <ul class="mask">
+                                    <li><img src="img/page4-2.jpg" alt="img"/></li>
+                                    <li><img src="img/page4-3.jpg" alt="img"/></li>
+                                    <li><img src="img/page4-4.jpg" alt="img"/></li>
+                                    <li><img src="img/page4-5.jpg" alt="img"/></li>
+
+
+
+                                </ul>
+
+                            </div>
+                </div>
+                
+                <p><img src="img/page4p.png" alt="img"></p>
+                
+                <div class="scroll">
+                        <img src="img/down.png" alt="down">
+                        <p>SCROLL DOWN</p>
+                    </div>
+
+    </section>    
+    <section id="page5">
+               
+               <p>이탈리아 축제</p>
+                <div id="w">
+                  <div><a href="#"><img src="img/can.jpg" alt="img"></a></div>
+                  <div><a href="#"><img src="img/car11.jpg" alt="img"><img class="hid" src="img/car1.jpg" alt="img"></a></div>
+                  <div><a href="#"><img src="img/car22.jpg" alt="img"><img class="hid2" src="img/car2.jpg" alt="img"></a></div>
+                </div>  
+                
+               <footer> <a href="#"><img src="img/twi.png" alt="twi"></a> </footer>      
+                    
+        
+    </section>    
+    
+  
+     
+</body>
+</html>

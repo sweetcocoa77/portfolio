@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    
+    <style>
+    
+         @import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+        
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #d5c7ac;
+            position: relative;
+        }
+        
+        /*    menu    */
+        
+        #menu {
+            position: absolute;
+            width: 100%;
+            height: 10%;
+            z-index: 10;
+        }
+        
+        a {text-decoration: none; color: whitesmoke;}
+        
+        #menu p { 
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            
+            width: 10%;
+            height: 100%;
+            
+        
+        }
+        
+        #menu p img {
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            
+        }
+        
+        #menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            width: 90%;
+            height: 100%;
+        }
+        
+        #menu li {
+            float: right;
+            padding: 20px;
+            line-height: 70px;
+        }
+ 
+        #menu:after{
+            content: "" ;
+            display: block;
+            clear: both;
+                
+        }
+/*        bon */
+        
+        #roma1{
+            width: 100%;
+            height: 1000px;
+            background: url(img/mil1.jpg) center center no-repeat fixed;
+            background-size: cover;
+           
+        }
+        
+        #roma1 > p:first-child {
+            color: white;
+            font-size: 250px;
+            position: absolute;
+            top: 20%;
+           
+            left: 0;
+            right: 0;
+            margin: auto;
+           
+            width: 100%;
+            height: 50%;
+            text-align: center;
+            font-family: 'Kaushan Script', cursive;
+            
+            
+        }
+        #roma1 > p:nth-child(2) {
+            color: white;
+            position: absolute;
+            bottom: 30%;
+           
+            left: 0;
+            right: 0;
+            margin: auto;
+         
+            width: 100%;
+            height: 10%;
+            text-align: center;
+            font-size: 18px;
+            line-height: 40px;
+        }
+        
+        #bon1 {
+            
+            background: url(img/milp2-23.png) center center no-repeat;
+            width: 100%;
+            height: 1270px;
+            position: absolute;
+            top: 800px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            z-index: 10;
+           
+           
+            
+            
+        }
+        
+        #bon1 > ul {
+            list-style: none;
+        }
+        
+        #bon1 > ul:first-child{
+            
+            position: absolute;
+            top: 500px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 1200px;
+            
+        }
+        
+        #bon1 > ul:nth-child(2){
+            
+            position: absolute;
+            top: 1180px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 1200px;
+            
+        }
+        
+        #bon1 > ul > li {
+            
+            float: left;
+            margin-left: 50px;
+            padding: 0;
+            width: 250px;
+            line-height: 24px;
+                        
+            
+        }
+        
+        
+        
+        #roma2{
+            width: 100%;
+            height: 1000px;
+            background: url(img/mil2.jpg) center center no-repeat fixed;
+            background-size: cover;
+            position: absolute;
+            top: 2250px;
+            clear: both;
+        }
+        
+        
+        #wrap {
+            
+            width: 1110px;
+            height: 423px;
+            position: absolute;
+            top: 40%;
+            
+            left: 0;
+            right: 0;
+            margin: auto;
+            
+            
+        }
+        
+        #wrap ul {
+            
+            
+            position: relative;
+            padding: 0;
+            list-style: none;
+        }
+        
+        #wrap ul li {
+            
+            width: 304px;
+            height: 423px;
+            
+            float: left;
+            
+            position: relative;
+            overflow: hidden;
+            margin-left: 50px;
+           
+        }
+        
+        #wrap ul li a {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            
+        }
+        
+        #wrap ul li > img {
+            display: block;
+            z-index: 10;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all 0.7s ease;
+            
+        }
+   
+    
+        
+      #wrap ul li:hover img { top: 423px; }
+        
+        
+        #roma2 > p {
+            position: absolute;
+            top: 15%;
+            color: whitesmoke;
+            text-align: center;
+           
+            width: 100%;
+            height: 100px;
+            font-size: 50px;
+        }
+        
+        #bon3{
+            
+            width: 100%;
+            height: 500px;
+            position: absolute;
+            top: 3250px;
+        }
+        
+        
+        
+        #bon3 > a > img {
+            display: inline-block;
+            position: absolute;
+            top: 10%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        
+        #bon3 > p {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            text-align: center;
+            
+            width: 100%;
+            height: 70%;
+            font-size: 30px;
+        
+            
+        }
+       
+        
+    
+        footer{
+            width: 100%;
+            height: 80px;
+            background-color: black;
+            position: absolute;
+            top: 3750px;
+        }
+        
+        footer img {
+            
+            height: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        
+    </style>
+    
+</head>
+<body>
+   
+   <div id="menu">
+      
+       <p><a href="main.html"><img src="img/logo.png" alt="logo"></a></p>
+       <ul>
+           <li></li>
+           <li><a href="#">CONTACT</a></li>
+           <li><a href="firenze.html">FIRENZE</a></li>
+           <li><a href="venice.html">VENICE</a></li>
+           <li><a href="milano.html">MILANO</a></li>
+           <li><a href="roma.html">ROMA</a></li>
+       </ul>
+   </div>
+   
+   
+   <div id="roma1">
+       <p>MILANO</p>
+       <p>이름만 들어도 가슴이 설레는 나라 이탈리아!<br/>
+꾸준한 노력으로 문화유산을 잘 보존하고 있는 국가이자 도시마다 각기<br/> 
+다른 멋을 가지고 있어 더욱 매력적인 곳입니다.</p>
+   </div>
+   
+   <div id="bon1">
+       
+       <ul>
+           <li><b style="font-size: 20px;">밀라노 두오모 성당 </b><br/><br/>
+
+            세련미가 뚝뚝 너며 흐르던 그곳<br/>
+            #유적지 #야경 <br/>
+            #유적 #허니문 #휴식 #데이<br/><br/><a href="#">MORE</a></li>
+           <li><b style="font-size: 20px;">스칼라 극장</b> <br/><br/>
+
+            베르디와 푸치니가 오페라를 초연했던 곳<br/>
+            #뮤지컬 #극장 #공연 <br/>
+            <br/><a href="#">MORE</a></li>
+            <li><b style="font-size: 20px;">몬테 나폴레오네 거리</b><br/><br/> 
+
+            밀라노 가볼만한 곳<br/>
+            #아울렛 #유적지 #시장<br/>
+            #유적<br/><br/><a href="#">MORE</a></li>
+            <li><b style="font-size: 20px;">브라레 회화관</b><br/><br/> 
+
+            이탈리아 회화의 보고<br/>
+            #회화 #유적지 #미술관 <br/>
+            #가족여행 #유물 <br/><br/><a href="#">MORE</a></li>
+       </ul>
+       <ul>
+           <li><b style="font-size: 20px;">스포르체스코 성 </b><br/><br/>
+
+            테피스트리와 천장이 볼만한 곳<br/>
+            #분수 #박물관 #공원 <br/>
+            #웅장한 #화려한 #재방문 <br/><br/><a href="#">MORE</a></li>
+           <li><b style="font-size: 20px;">산타 마리아 델레 그라치에 성당</b> <br/><br/>
+
+            고딕 양식으로 세워진 수도원<br/>
+            #박물관 #젤라또 #핫플레이스 <br/>
+            #나들이 #휴식 
+            <br/><br/><a href="#">MORE</a></li>
+            <li><b style="font-size: 20px;">나빌리오 운하</b><br/><br/> 
+
+            야경 좋은곳<br/>
+            #공원 #칵테일 #레스토랑<br/>
+            #핫플레이스 #휴식<br/><br/><a href="#">MORE</a></li>
+            <li><b style="font-size: 20px;">비토리오 엠마누엘 2세 갤러리아</b><br/><br/> 
+
+            갤러리아<br/>
+            #젤라또 #쇼핑 #티라미수 <br/>
+            #핫플레이스 <br/><br/><a href="#">MORE</a></li>
+       </ul>
+       
+   </div>
+   
+   
+   <div id="roma2">
+       
+       <p>이런 여행테마는 어때요?</p>
+       <div id="wrap">
+                <ul>
+                    <li>
+
+                        <a href="#"><img id="z" src="img/p2312.jpg" alt="img"></a>
+                        <img src="img/p231.jpg" alt="img">
+                    </li>
+                    <li>
+
+                        <a href="#"><img src="img/p2313.jpg" alt="img"></a>
+                        <img src="img/p232.jpg" alt="img">
+                    </li>
+                    <li>
+
+                        <a href="#"><img src="img/p2314.jpg" alt="img"></a>
+                        <img src="img/p233.jpg" alt="img">
+                    </li>
+                   
+
+                </ul>
+
+            </div>
+
+       
+       
+   </div>
+   
+   <div id="bon3">
+   
+           <p><b>TRAVEL INFOR</b></p>
+           
+           <a href="#"><img src="img/p123456789.png" alt="img"></a>
+   
+   
+   </div>
+   
+   <footer> <a href="#"><img src="img/twi.png" alt="twi"></a> </footer>
+    
+</body>
+</html>
